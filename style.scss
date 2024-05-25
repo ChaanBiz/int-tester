@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:ital,wght@200,300,400,500,600,700,800;1,300&family=Poppins&display=swap');
 
 * {
-    padding: 30;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato';
+  padding: 30;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
 }
 
 body {
-    background-image: linear-gradient(50deg, rgb(223, 183, 223), #fff);
+  background-image: linear-gradient(50deg, rgb(223, 183, 223), #fff);
 }
 
 .container {
-    height: 100vh;
+  height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,4 +48,4 @@ body {
         letter-spacing: 5px;
       }
     }
-  }
+}
