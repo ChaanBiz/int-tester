@@ -12,24 +12,34 @@ const ops = [
     "What do you know about boostrap?",
 ]
 
-const used = new Set()
+const usedIndexes = new Set()
 const quest = document.getElementById("quest")
 const btn = document.getElementById("btn")
+const head = document.getElementById("head")
 
 function interview() {
+    if (usedIndexes.size >= ops.length) {
+        head.innerHTML = "Last Question"
+        btn.innerHTML = "again"
+        usedIndexes.clear()
+    }
+
     while(true) {
         const random = Math.floor(Math.random() * ops.length)
 
-        if(used.has(random)) continue
+        if(usedIndexes.has(random)) continue
 
         const question = ops[random]
         quest.innerHTML = question
-        used.add(random)
+        usedIndexes.add(random)
         break
     }
+
+
 }
 
 btn.addEventListener("click", function() {
     btn.innerHTML = "next"
+    head.innerHTML = "Good Day! Welcome to the interview. Shall we proceed?"
     interview()
 })
