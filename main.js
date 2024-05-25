@@ -13,4 +13,14 @@ const ops = [
 ]
 
 const used = new Set()
+const quest = document.getElementById("quest")
+const btn = document.getElementById("btn")
 
+function interview() {
+    quest.innerHTML = "hello"
+}
+
+btn.addEventListener("click", function() {
+    btn.innerHTML = "next"
+    interview()
+})

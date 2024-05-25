@@ -24,13 +24,14 @@ body {
 }
 .container #quest {
   background-color: #e0c5e6;
-  font-size: 18px;
+  font-size: 20px;
   margin: 50px 0 20px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
+  color: rgb(146, 81, 146);
 }
 .container #btn {
   font-size: 18px;
