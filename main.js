@@ -34,8 +34,6 @@ function interview() {
         usedIndexes.add(random)
         break
     }
-
-
 }
 
 btn.addEventListener("click", function() {
