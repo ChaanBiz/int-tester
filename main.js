@@ -17,7 +17,16 @@ const quest = document.getElementById("quest")
 const btn = document.getElementById("btn")
 
 function interview() {
-    quest.innerHTML = "hello"
+    while(true) {
+        const random = Math.floor(Math.random() * ops.length)
+
+        if(used.has(random)) continue
+
+        const question = ops[random]
+        quest.innerHTML = question
+        used.add(random)
+        break
+    }
 }
 
 btn.addEventListener("click", function() {
