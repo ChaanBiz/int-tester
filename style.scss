@@ -18,8 +18,9 @@ body {
     align-items: center;
     justify-content: center;
     h1 {
-        text-align: center;
-        padding: 0 20px;
+      text-align: center;
+      padding: 0 20px;
+      color: rgb(150, 96, 150);
     }
     #quest {
       background-color: #e0c5e6;
@@ -39,5 +40,11 @@ body {
       border: 2px solid rgba(150, 96, 150, 0.774);
       color: rgb(150, 96, 150);
       cursor: pointer;
+      transition: .4s;
+      text-transform: uppercase;
+      &:hover {
+        padding: 10px 60px;
+        letter-spacing: 5px;
+      }
     }
   }

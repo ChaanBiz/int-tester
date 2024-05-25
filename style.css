@@ -20,6 +20,7 @@ body {
 .container h1 {
   text-align: center;
   padding: 0 20px;
+  color: rgb(150, 96, 150);
 }
 .container #quest {
   background-color: #e0c5e6;
@@ -39,6 +40,12 @@ body {
   border: 2px solid rgba(150, 96, 150, 0.774);
   color: rgb(150, 96, 150);
   cursor: pointer;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.container #btn:hover {
+  padding: 10px 60px;
+  letter-spacing: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
